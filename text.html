@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="image/sticker.jfif" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <img
+              class="hidden"
+              width="30px"
+              src="image/close.png"
+              onclick="closemenu()"
+            />
+          </ul>
+          <img
+            class="hidden"
+            width="30px"
+            src="image/menu.png"
+            onclick="openmenu()"
+          />
+        </nav>
+        <div class="header_text">
+          <p>Web Developer</p>
+          <h1>Hi I Am <span>Sushant</span> <br />Kumar From India</h1>
+        </div>
+      </div>
+    </div>
+
+    <!----------- about section --------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about_col_1">
+            <img src="image/side.jpg" />
+          </div>
+          <div class="about_col_2">
+            <h1 class="sub_title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus quas iste eius, nisi soluta cupiditate quasi sed labore
+              beatae similique, atque nobis molestias fugiat nemo velit dolorum
+              nihil sunt! Eaque, perferendis eligendi pariatur rem voluptate
+              corporis voluptates eos culpa, totam delectus consequuntur
+              praesentium unde deleniti architecto ipsam itaque laboriosam
+              assumenda modi, facilis distinctio quaerat libero. Facere
+            </p>
+            <div class="tab_titles">
+              <p class="tab_links active_link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab_links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab_links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab_contents active_tab" id="skills">
+              <ul>
+                <li><span>java</span><br />And Its Algorithm</li>
+                <li><span>Html</span><br />complete=80%</li>
+                <li><span>Css</span><br />complete=70%</li>
+                <li><span>Js</span><br />complete=60%</li>
+              </ul>
+            </div>
+            <div class="tab_contents" id="experience">
+              <ul>
+                <li><span>java</span><br />one and half year experiances</li>
+                <li><span>Html</span><br />Hotel website</li>
+                <li><span>Css</span><br />amazon clone</li>
+                <li><span>Js</span><br />My portfolio</li>
+              </ul>
+            </div>
+            <div class="tab_contents" id="education">
+              <ul>
+                <li><span>java</span><br />singhad college pune(6.7 cgpa)</li>
+                <li><span>Html</span><br />pn anglo school(82%)</li>
+                <li><span>Css</span><br />A.V.N english school (68%)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------services ------------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub_title">My services</h1>
+        <div class="services_list">
+          <div>
+            <img width="40px" src="image/web.jfif" />
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+              aperiam voluptates omnis quam ab corporis eaque veniam quaerat max
+            </p>
+            <a href="#">Lerrn More</a>
+          </div>
+          <div>
+            <img width="80px" src="image/app1.png" />
+            <h2>App Design</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+              aperiam voluptates omnis quam ab corporis eaque veniam quaerat max
+            </p>
+            <a href="#">Lerrn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------------------portfolio ---------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub_title">My Work</h1>
+        <div class="work_list">
+          <div class="work">
+            <img width="400px" src="image/app1.jpg" />
+            <div class="layer">
+              <h3>Social Media Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                dolor fugit magni ea doloremque excepturi error eos voluptas
+              </p>
+              <a href="#"
+                ><img height="40px" width="40px" src="image/link.png" />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img width="400px" src="image/app2.jpg" />
+            <div class="layer">
+              <h3>Shopping Website</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                dolor fugit magni ea doloremque excepturi error eos voluptas
+              </p>
+              <a href="#"
+                ><img height="40px" width="40px" src="image/link.png" />
+              </a>
+            </div>
+          </div>
+          <div class="work">
+            <img width="400px" src="image/app3.jpg" />
+            <div class="layer">
+              <h3>Whatsapp Clone</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                dolor fugit magni ea doloremque excepturi error eos voluptas
+              </p>
+              <a href="#"
+                ><img height="40px" width="40px" src="image/link.png" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!------------------ contect section------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact_left">
+            <h1 class="sub_title">Contact Me</h1>
+            <p>
+              <img width="20px" src="image/send.png" /> sushantmech384@gmail.com
+            </p>
+            <p><img width="20px" src="image/phone.jpg" /> 8390367646</p>
+            <div class="social_icons">
+              <a href="https://www.facebook.com/">
+                <img height="25px" src="image/facebook.png" />
+              </a>
+              <a href=""> <img height="25px" src="image/twitter.png" /> </a>
+              <a href=""> <img height="25px" src="image/insagram.jfif" /> </a>
+              <a href=""> <img height="25px" src="image/linkdin.png" /> </a>
+              <a href=""> <img height="25px" src="image/insagram.jfif" /> </a>
+            </div>
+            <a class="btn btn2" href="put inside resume">Donload CV</a>
+          </div>
+          <div class="contact_right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="your message"
+              ></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          A copyright notice is a short line of text that lets the
+          <img width="15px" src="image/hert.png" /> public know that your work
+          is protected by copyright law and is not to be copied.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab_links");
+      var tabcontents = document.getElementsByClassName("tab_contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active_link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active_tab");
+        }
+        event.currentTarget.classList.add("active_link");
+        document.getElementById(tabname).classList.add("active_tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "<https://script.google.com/macros/s/AKfycbyrUvUs-U-tD38pcq-NvROKYIWthEmaczJGeEk5q5MYvqOi9UD7aVbSQLbM-AIJeuqj/exec>";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
